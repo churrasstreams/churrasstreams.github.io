@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #1a1a1a; /* Cor de fundo mais escura para um tema mais "dark" */
+    color: #f4f4f4; /* Texto claro para contraste com o fundo escuro */
 }
 
 a {
@@ -25,7 +25,7 @@ ul {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #222;
+    background-color: #222; /* Preto escuro */
     padding: 10px 0;
     z-index: 100;
 }
@@ -57,7 +57,7 @@ ul {
 
 .header .navbar a:hover,
 .header .navbar .active {
-    background-color: #00bcd4;
+    background-color: #d32f2f; /* Vermelho */
     border-radius: 5px;
 }
 
@@ -75,7 +75,7 @@ main {
 .stream-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #333;
+    color: #d32f2f; /* Vermelho para o título */
 }
 
 .stream-container {
@@ -96,21 +96,21 @@ main {
 .stream-description {
     margin-top: 40px;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #333; /* Fundo escuro */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
 }
 
 .stream-description h3 {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #00bcd4;
+    color: #d32f2f; /* Vermelho para o título */
 }
 
 .stream-description p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color: #555;
+    color: #f4f4f4; /* Texto claro */
 }
 
 /* Botões de Ação */
@@ -129,22 +129,22 @@ main {
 }
 
 .action-buttons .btn-primary {
-    background-color: #00bcd4;
+    background-color: #d32f2f; /* Vermelho */
     color: #fff;
 }
 
 .action-buttons .btn-primary:hover {
-    background-color: #0097a7;
+    background-color: #b71c1c; /* Vermelho mais escuro */
 }
 
 .action-buttons .btn-secondary {
-    background-color: #f0f0f0;
+    background-color: #f4f4f4; /* Branco para contraste */
     color: #333;
     border: 2px solid #ddd;
 }
 
 .action-buttons .btn-secondary:hover {
-    background-color: #e0e0e0;
+    background-color: #ddd;
 }
 
 /* Rodapé */
@@ -152,7 +152,7 @@ footer {
     text-align: center;
     margin-top: 60px;
     padding: 20px;
-    background-color: #222;
+    background-color: #222; /* Preto escuro */
     color: #fff;
 }
 

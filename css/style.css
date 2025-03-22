@@ -1,4 +1,4 @@
-/* Reset de Estilos Básicos */
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -6,176 +6,63 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a; /* Cor de fundo mais escura para um tema mais "dark" */
-    color: #f4f4f4; /* Texto claro para contraste com o fundo escuro */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style-type: none;
-}
-
-/* Barra de Navegação */
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #222; /* Preto escuro */
-    padding: 10px 0;
-    z-index: 100;
-}
-
-.header .logo {
-    float: left;
-    margin-left: 20px;
-}
-
-.header .navbar {
-    float: right;
-    margin-right: 20px;
-}
-
-.header .navbar ul {
-    display: flex;
-    gap: 20px;
-}
-
-.header .navbar li {
-    font-size: 18px;
-}
-
-.header .navbar a {
+header {
+    background-color: #333;
     color: #fff;
-    padding: 10px;
-    transition: 0.3s;
-}
-
-.header .navbar a:hover,
-.header .navbar .active {
-    background-color: #d32f2f; /* Vermelho */
-    border-radius: 5px;
-}
-
-/* Conteúdo Principal */
-main {
-    margin-top: 80px; /* Espaço para a barra de navegação fixa */
-    padding: 20px;
+    padding: 1rem 0;
     text-align: center;
 }
 
-.stream-section {
-    margin-bottom: 30px;
+header .logo img {
+    max-width: 150px;
 }
 
-.stream-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #d32f2f; /* Vermelho para o título */
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-.stream-container {
-    position: relative;
-    margin: 0 auto;
-    width: 80%;
-    max-width: 1200px;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-.stream-container iframe {
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+.stream iframe {
     width: 100%;
-    height: 600px;
+    height: 500px;
     border: none;
-    border-radius: 10px;
-}
-
-/* Descrição do Jogo */
-.stream-description {
-    margin-top: 40px;
-    padding: 20px;
-    background-color: #333; /* Fundo escuro */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
 }
 
-.stream-description h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #d32f2f; /* Vermelho para o título */
-}
-
-.stream-description p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #f4f4f4; /* Texto claro */
-}
-
-/* Botões de Ação */
-.action-buttons {
-    margin-top: 40px;
-}
-
-.action-buttons .btn {
-    font-size: 1.2rem;
-    padding: 12px 30px;
-    margin: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.action-buttons .btn-primary {
-    background-color: #d32f2f; /* Vermelho */
-    color: #fff;
-}
-
-.action-buttons .btn-primary:hover {
-    background-color: #b71c1c; /* Vermelho mais escuro */
-}
-
-.action-buttons .btn-secondary {
-    background-color: #f4f4f4; /* Branco para contraste */
-    color: #333;
-    border: 2px solid #ddd;
-}
-
-.action-buttons .btn-secondary:hover {
-    background-color: #ddd;
-}
-
-/* Rodapé */
 footer {
     text-align: center;
-    margin-top: 60px;
-    padding: 20px;
-    background-color: #222; /* Preto escuro */
+    padding: 1rem;
+    background-color: #333;
     color: #fff;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .header .navbar ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .stream-container iframe {
-        height: 400px;
-    }
-
-    .stream-description p {
-        font-size: 1rem;
-    }
-}
-
-/* Logo */
-.header .logo img {
-    max-width: 50px; /* Define a largura máxima do logo */
-    height: auto; /* Mantém a proporção da altura conforme a largura */
-    display: block;
-    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }

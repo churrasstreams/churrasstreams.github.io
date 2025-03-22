@@ -171,3 +171,11 @@ footer {
         font-size: 1rem;
     }
 }
+
+/* Logo */
+.header .logo img {
+    max-width: 200px; /* Define a largura máxima do logo */
+    height: auto; /* Mantém a proporção da altura conforme a largura */
+    display: block;
+    margin: 0 auto;
+}

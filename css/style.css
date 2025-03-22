@@ -174,3 +174,10 @@ footer p {
         padding: 10px 25px;
     }
 }
+
+/* Estilo para o item ativo na navegação */
+nav ul li a.active {
+    background-color: #d32f2f; /* Vermelho */
+    color: #fff;
+    border-radius: 5px;
+}
